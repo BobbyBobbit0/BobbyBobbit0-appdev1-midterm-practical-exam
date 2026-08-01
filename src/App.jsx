@@ -1,16 +1,14 @@
-import Title from './components/Title'
+import PageTitle from './components/Title'
 import Footer from './components/Footer'
-import Hobbies from './components/Hobbies'
+import Hobbies from './components/hobbies/Hobbies'
 
 function App() {
-
   return (
     <>
-      <Title />
+      <PageTitle />
       <Hobbies />
       <Footer />
     </>
   )
 }
-
 export default App

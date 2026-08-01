@@ -1,5 +1,4 @@
 import Divider from './Divider'
-
 function Hobbies() {
     return (
         <div>
@@ -10,8 +9,8 @@ function Hobbies() {
             <li>Swimming</li>
             <Divider />
             <li>Photography</li>
+            <Divider />
         </div>
     )
 }
-
 export default Hobbies
