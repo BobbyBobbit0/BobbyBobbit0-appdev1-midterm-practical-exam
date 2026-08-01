@@ -1,4 +1,4 @@
 function Divider() {
-  return <hr />;
+  return <hr className="hobby-divider" />;
 }
 export default Divider;

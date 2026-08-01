@@ -1,0 +1,68 @@
+/* App & Footer Component Styling */
+
+.footer-container {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px dashed var(--card-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer-copyright {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.copyright-icon {
+  font-size: 14px;
+  color: var(--accent-indigo);
+}
+
+.site-brand {
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: 0.2px;
+}
+
+.footer-sep {
+  color: var(--card-border-hover);
+  opacity: 0.6;
+}
+
+.years-pill {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent-purple);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.years-pill:hover {
+  background: rgba(168, 85, 247, 0.2);
+  color: var(--text-heading);
+}
+
+@media (max-width: 640px) {
+  .footer-copyright {
+    font-size: 12px;
+    gap: 6px;
+    flex-direction: column;
+  }
+
+  .footer-sep {
+    display: none;
+  }
+}

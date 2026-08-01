@@ -6,18 +6,37 @@ function Hobbies() {
     const isHobbyist = hobbyCount > 2
 
     return (
-        <div>
-            <h2>Hobbies</h2>
+        <section className="hobbies-card">
+            <div className="section-header">
+                <span className="section-subtitle">Curated Interests</span>
+                <h2 className="section-title">Hobbies</h2>
+            </div>
+            
             <ul className="hobbies-list">
-                <li>Reading</li>
+                <li className="hobby-item">
+                    <span className="hobby-icon" role="img" aria-label="Reading">📖</span>
+                    <span className="hobby-text">Reading</span>
+                </li>
                 <Divider />
-                <li>Swimming</li>
+                <li className="hobby-item">
+                    <span className="hobby-icon" role="img" aria-label="Swimming">🏊‍♂️</span>
+                    <span className="hobby-text">Swimming</span>
+                </li>
                 <Divider />
-                <li>Photography</li>
+                <li className="hobby-item">
+                    <span className="hobby-icon" role="img" aria-label="Photography">📷</span>
+                    <span className="hobby-text">Photography</span>
+                </li>
                 <Divider />
             </ul>
-            <p>{isHobbyist ? "I'm quite the hobbyist!" : "I'm just getting started."}</p>
-        </div>
+
+            <div className="hobbyist-status">
+                <span className="status-indicator"></span>
+                <p className="status-message">
+                    {isHobbyist ? "I'm quite the hobbyist!" : "I'm just getting started."}
+                </p>
+            </div>
+        </section>
     )
 }
 export default Hobbies
